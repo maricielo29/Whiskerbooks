@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Girlie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #FADADD, #FFE9F3);
+            color: #444;
+        }
+        .sidebar {
+            width: 220px;
+            background-color: #fff;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .sidebar h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #C46885;
+        }
+        .sidebar a {
+            margin: 10px 0;
+            color: #C46885;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .main {
+            margin-left: 240px;
+            padding: 30px;
+        }
+        .book-card {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            max-width: 600px;
+        }
+        .book-card img {
+            width: 120px;
+            float: right;
+            margin-left: 20px;
+            border-radius: 10px;
+        }
+        .btn-download {
+            display: inline-block;
+            background-color: #FADADD;
+            color: #C46885;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color: #C46885;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Mi Biblioteca</h2>
+        <a href="#">Inicio</a>
+        <a href="#">Romance</a>
+        <a href="#">Fantasía</a>
+        <a href="#">Poesía</a>
+        <a href="#">Recomendados</a>
+    </div>
+
+    <div class="main">
+        <h1>Libros disponibles 📚</h1>
+
+        <div class="book-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/05/The_Little_Prince_cover.jpg" alt="Portada del libro">
+            <h2>The Little Prince</h2>
+            <p>Un cuento clásico sobre la amistad, la inocencia y el amor. Ideal para todas las edades.</p>
+            <a class="btn-download" href="ENLACE_DEL_LIBRO_1.epub" download>Descargar EPUB</a>
+        </div>
+
+        <div class="book-card">
+            <img src="https://covers.openlibrary.org/b/id/8235266-L.jpg" alt="Portada del libro">
+            <h2>Pride and Prejudice</h2>
+            <p>Una novela de amor y orgullo, ambientada en la época victoriana.</p>
+            <a class="btn-download" href="ENLACE_DEL_LIBRO_2.epub" download>Descargar EPUB</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
